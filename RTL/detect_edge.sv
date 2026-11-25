@@ -10,8 +10,7 @@ module detect_edge
    ,output [0:0] unbutton_o
    );
 
-   // Your code here:
-   logic [0:0] old_button_r; // I define the inputs and outputs again as logic because this module is from a lab before we were allowed to declare inputs/outputs as logic
+   logic [0:0] old_button_r;
    logic [0:0] button_r;
    logic [0:0] unbutton_r;
 
