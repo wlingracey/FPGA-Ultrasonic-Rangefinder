@@ -1,0 +1,14 @@
+{
+    "top": "top",
+    "files":
+    ["code/debounce.sv"
+    ,"code/counter_sat.sv"
+    ,"code/detect_edge.sv"
+    ,"code/dff.sv"
+    ,"code/inv.sv"
+    ,"code/hex2ssd.sv"
+    ,"code/uart_rx.sv"
+    ,"code/rangefinder.sv"
+    ,"code/ssd_mux.sv"
+    ]
+}
