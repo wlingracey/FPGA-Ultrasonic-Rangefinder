@@ -1,12 +1,10 @@
 // this counter will hold once at the max or min value unless an input decrements/increments it away
 module counter_sat
   #(parameter width_p = 4,
-    /* verilator lint_off WIDTHTRUNC */
     parameter [width_p-1:0] reset_val_p = '0,
     // sat_val will always be greater than reset_val_p, and less than (1<< (width_p - 1))
     parameter [width_p-1:0] sat_val_p = '0
     )
-    /* verilator lint_on WIDTHTRUNC */
    (input [0:0] clk_i // clock signal
    ,input [0:0] reset_i // reset signal
    ,input [0:0] up_i // up input
@@ -16,8 +14,6 @@ module counter_sat
    logic [width_p-1:0] count_r; // register to hold the count value
 
    assign count_o = count_r;
-
-   // Your code here:
    always_ff @(posedge clk_i) begin
     if (reset_i) begin // when reset asserted set counter back to value dictated by reset paramter
       count_r <= reset_val_p;
